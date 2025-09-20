@@ -2,13 +2,20 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  /* Changed to pure black for better visibility */
+  --text-primary: #000000;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ffffff;
+    --text-primary: #ffffff;
+    --text-secondary: #e5e7eb;
+    --text-muted: #9ca3af;
   }
 }
 
@@ -27,4 +34,32 @@ body {
 
 .text-gray-400 {
   color: #374151 !important;
+}
+
+/* Utility classes for consistent text styling */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Improved focus states for better accessibility */
+.focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Better contrast for links */
+a {
+  color: #1d4ed8;
+}
+
+a:hover {
+  color: #1e40af;
 }

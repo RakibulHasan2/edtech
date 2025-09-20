@@ -79,7 +79,7 @@ export default function AdminDashboard() {
         <div className="p-6 max-w-7xl mx-auto">
             {/* Welcome Section */}
             <div className="mb-8">
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                     Admin Dashboard 🛡️
                 </h1>
                 <p className="text-gray-600">Monitor and manage the EduTech Pro platform</p>
@@ -135,8 +135,8 @@ export default function AdminDashboard() {
                                             <div className="flex items-center gap-4 text-sm text-gray-600">
                                                 <span>{user.email}</span>
                                                 <span className={`px-2 py-1 rounded-full text-xs font-medium ${user.role === 'admin' ? 'bg-red-100 text-red-800' :
-                                                        user.role === 'instructor' ? 'bg-blue-100 text-blue-800' :
-                                                            'bg-green-100 text-green-800'
+                                                    user.role === 'instructor' ? 'bg-blue-100 text-blue-800' :
+                                                        'bg-green-100 text-green-800'
                                                     }`}>
                                                     {user.role}
                                                 </span>
@@ -222,9 +222,9 @@ export default function AdminDashboard() {
                                 {recentActivity.map((activity, index) => (
                                     <div key={index} className="flex items-start gap-4">
                                         <div className={`p-2 rounded-full mt-1 ${activity.type === 'user' ? 'bg-blue-100 text-blue-600' :
-                                                activity.type === 'course' ? 'bg-green-100 text-green-600' :
-                                                    activity.type === 'payment' ? 'bg-yellow-100 text-yellow-600' :
-                                                        'bg-purple-100 text-purple-600'
+                                            activity.type === 'course' ? 'bg-green-100 text-green-600' :
+                                                activity.type === 'payment' ? 'bg-yellow-100 text-yellow-600' :
+                                                    'bg-purple-100 text-purple-600'
                                             }`}>
                                             {activity.type === 'user' && <Users className="w-4 h-4" />}
                                             {activity.type === 'course' && <BookOpen className="w-4 h-4" />}

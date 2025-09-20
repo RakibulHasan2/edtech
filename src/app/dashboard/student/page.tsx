@@ -42,7 +42,7 @@ export default function StudentDashboard() {
         <div className="p-6 max-w-7xl mx-auto">
             {/* Welcome Section */}
             <div className="mb-8">
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                     Welcome back, {user?.name}! 👋
                 </h1>
                 <p className="text-black">Ready to continue your learning journey?</p>

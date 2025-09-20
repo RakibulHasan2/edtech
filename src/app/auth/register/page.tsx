@@ -88,7 +88,7 @@ export default function RegisterPage() {
                         <span>EduTech Pro</span>
                     </Link>
                     <h1 className="text-3xl font-bold text-gray-900 mt-6 mb-2">Create Account</h1>
-                    <p className="text-gray-600">Join thousands of learners advancing their careers</p>
+                    <p className="text-black">Join thousands of learners advancing their careers</p>
                 </div>
 
                 {/* Registration Form */}

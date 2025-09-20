@@ -82,7 +82,7 @@ export default function HomePage() {
                   </Button>
                 </Link>
                 <Link href="/auth/register">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                  <Button size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-blue-600">
                     Start Free Trial
                   </Button>
                 </Link>
@@ -145,7 +145,7 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <feature.icon className="w-6 h-6 text-blue-600" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                  <h3 className="text-lg text-black font-semibold mb-2">{feature.title}</h3>
                   <p className="text-black">{feature.description}</p>
                 </CardContent>
               </Card>

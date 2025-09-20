@@ -73,7 +73,7 @@ export default function InstructorDashboard() {
         <div className="p-6 max-w-7xl mx-auto">
             {/* Welcome Section */}
             <div className="mb-8">
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                     Instructor Dashboard 📚
                 </h1>
                 <p className="text-gray-600">Manage your courses and track your teaching progress</p>
@@ -171,9 +171,9 @@ export default function InstructorDashboard() {
                                 {recentActivity.map((activity, index) => (
                                     <div key={index} className="flex items-start gap-4">
                                         <div className={`p-2 rounded-full mt-1 ${activity.type === 'enrollment' ? 'bg-blue-100 text-blue-600' :
-                                                activity.type === 'review' ? 'bg-yellow-100 text-yellow-600' :
-                                                    activity.type === 'question' ? 'bg-purple-100 text-purple-600' :
-                                                        'bg-green-100 text-green-600'
+                                            activity.type === 'review' ? 'bg-yellow-100 text-yellow-600' :
+                                                activity.type === 'question' ? 'bg-purple-100 text-purple-600' :
+                                                    'bg-green-100 text-green-600'
                                             }`}>
                                             {activity.type === 'enrollment' && <Users className="w-4 h-4" />}
                                             {activity.type === 'review' && <Star className="w-4 h-4" />}
