@@ -202,7 +202,7 @@ export default function AboutPage() {
                         <Link href="/courses" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                             Browse Courses
                         </Link>
-                        <Link href="/auth/register" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                        <Link href="/auth/register" className="border-2 border-white text-black  px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
                             Sign Up Free
                         </Link>
                     </div>

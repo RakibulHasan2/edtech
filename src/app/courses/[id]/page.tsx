@@ -143,7 +143,7 @@ export default function CourseDetailPage() {
                                                 <span className="text-3xl font-bold">
                                                     {formatPrice(course.price)}
                                                 </span>
-                                                <span className="text-lg text-gray-500 line-through">
+                                                <span className="text-lg text-black line-through">
                                                     {formatPrice(course.originalPrice)}
                                                 </span>
                                                 {course.discount && (
@@ -229,7 +229,7 @@ export default function CourseDetailPage() {
                                         onClick={() => setActiveTab(tab.id)}
                                         className={`py-4 px-1 border-b-2 font-medium text-sm ${activeTab === tab.id
                                             ? 'border-blue-500 text-blue-600'
-                                            : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                                            : 'border-transparent text-black hover:text-black hover:border-gray-300'
                                             }`}
                                     >
                                         {tab.label}
@@ -243,7 +243,7 @@ export default function CourseDetailPage() {
                             <div className="space-y-8">
                                 <div>
                                     <h2 className="text-2xl font-bold mb-4">About this course</h2>
-                                    <div className="prose max-w-none text-gray-700">
+                                    <div className="prose max-w-none text-black">
                                         <p>{course.description}</p>
                                     </div>
                                 </div>
@@ -254,7 +254,7 @@ export default function CourseDetailPage() {
                                         {course.whatYouWillLearn.map((outcome: string, index: number) => (
                                             <div key={index} className="flex items-start gap-3">
                                                 <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                                                <span className="text-gray-700">{outcome}</span>
+                                                <span className="text-black">{outcome}</span>
                                             </div>
                                         ))}
                                     </div>
@@ -264,7 +264,7 @@ export default function CourseDetailPage() {
                                         {course.requirements.map((requirement, index) => (
                                             <li key={index} className="flex items-start gap-3">
                                                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0" />
-                                                <span className="text-gray-700">{requirement}</span>
+                                                <span className="text-black">{requirement}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -281,7 +281,7 @@ export default function CourseDetailPage() {
                                             <CardHeader className="pb-3">
                                                 <div className="flex items-center justify-between">
                                                     <h3 className="text-lg font-semibold">{module.title}</h3>
-                                                    <span className="text-sm text-gray-500">
+                                                    <span className="text-sm text-black">
                                                         {module.lessons.length} lessons
                                                     </span>
                                                 </div>
@@ -291,13 +291,13 @@ export default function CourseDetailPage() {
                                                     {module.lessons.map((lesson, lessonIndex) => (
                                                         <div key={lesson.id} className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
                                                             <div className="flex items-center gap-3">
-                                                                <span className="text-sm text-gray-500 font-mono">
+                                                                <span className="text-sm text-black font-mono">
                                                                     {String(moduleIndex + 1).padStart(2, '0')}.{String(lessonIndex + 1).padStart(2, '0')}
                                                                 </span>
                                                                 <Play className="w-4 h-4 text-gray-400" />
-                                                                <span className="text-gray-700">{lesson.title}</span>
+                                                                <span className="text-black">{lesson.title}</span>
                                                             </div>
-                                                            <span className="text-sm text-gray-500">{lesson.duration}</span>
+                                                            <span className="text-sm text-black">{lesson.duration}</span>
                                                         </div>
                                                     ))}
                                                 </div>
@@ -323,28 +323,28 @@ export default function CourseDetailPage() {
                                             />
                                             <div className="flex-1">
                                                 <h3 className="text-xl font-semibold mb-2">{course.instructorName}</h3>
-                                                <p className="text-gray-600 mb-4">Expert {course.category} Instructor</p>
+                                                <p className="text-black mb-4">Expert {course.category} Instructor</p>
 
                                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
                                                     <div className="text-center">
                                                         <div className="text-2xl font-bold text-blue-600">4.8</div>
-                                                        <div className="text-sm text-gray-500">Instructor Rating</div>
+                                                        <div className="text-sm text-black">Instructor Rating</div>
                                                     </div>
                                                     <div className="text-center">
                                                         <div className="text-2xl font-bold text-blue-600">2,458</div>
-                                                        <div className="text-sm text-gray-500">Reviews</div>
+                                                        <div className="text-sm text-black">Reviews</div>
                                                     </div>
                                                     <div className="text-center">
                                                         <div className="text-2xl font-bold text-blue-600">45,231</div>
-                                                        <div className="text-sm text-gray-500">Students</div>
+                                                        <div className="text-sm text-black">Students</div>
                                                     </div>
                                                     <div className="text-center">
                                                         <div className="text-2xl font-bold text-blue-600">12</div>
-                                                        <div className="text-sm text-gray-500">Courses</div>
+                                                        <div className="text-sm text-black">Courses</div>
                                                     </div>
                                                 </div>
 
-                                                <p className="text-gray-700">
+                                                <p className="text-black">
                                                     Professional instructor with over 10 years of experience in {course.category.toLowerCase()}.
                                                     Passionate about teaching and helping students achieve their goals.
                                                 </p>
@@ -376,11 +376,11 @@ export default function CourseDetailPage() {
                                                             <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                                                         ))}
                                                     </div>
-                                                    <span className="text-sm text-gray-500">2 weeks ago</span>
+                                                    <span className="text-sm text-black">2 weeks ago</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className="text-gray-700">
+                                        <p className="text-black">
                                             Excellent course! The instructor explains complex concepts in a very clear and understandable way.
                                             The hands-on projects really helped me apply what I learned.
                                         </p>
@@ -404,11 +404,11 @@ export default function CourseDetailPage() {
                                                         ))}
                                                         <Star className="w-4 h-4 text-gray-300" />
                                                     </div>
-                                                    <span className="text-sm text-gray-500">1 month ago</span>
+                                                    <span className="text-sm text-black">1 month ago</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className="text-gray-700">
+                                        <p className="text-black">
                                             Great course content and well-structured lessons. Would recommend to anyone looking to learn this topic.
                                         </p>
                                     </div>
@@ -439,7 +439,7 @@ export default function CourseDetailPage() {
                                                 <h4 className="text-sm font-medium line-clamp-2">
                                                     Advanced {course.category} Techniques
                                                 </h4>
-                                                <p className="text-xs text-gray-500">$49.99</p>
+                                                <p className="text-xs text-black">$49.99</p>
                                             </div>
                                         </div>
                                     ))}
