@@ -191,7 +191,7 @@ export default function CourseDetailPage() {
                                         </div>
                                     </div>
 
-                                    <div className="space-y-3 text-sm">
+                                    <div className="space-y-3 text-sm text-black">
                                         <div className="flex items-center gap-3">
                                             <Award className="w-4 h-4 text-blue-600" />
                                             <span>Certificate of completion</span>
@@ -274,8 +274,8 @@ export default function CourseDetailPage() {
 
                         {activeTab === 'curriculum' && (
                             <div>
-                                <h2 className="text-2xl font-bold mb-6">Course curriculum</h2>
-                                <div className="space-y-4">
+                                <h2 className="text-2xl font-bold mb-6 text-black">Course curriculum</h2>
+                                <div className="space-y-4 text-black">
                                     {course.modules.map((module, moduleIndex) => (
                                         <Card key={module.id}>
                                             <CardHeader className="pb-3">
@@ -310,7 +310,7 @@ export default function CourseDetailPage() {
 
                         {activeTab === 'instructor' && (
                             <div>
-                                <h2 className="text-2xl font-bold mb-6">Your instructor</h2>
+                                <h2 className="text-2xl font-bold mb-6  text-black">Your instructor</h2>
                                 <Card>
                                     <CardContent className="p-6">
                                         <div className="flex items-start gap-6">
@@ -357,7 +357,7 @@ export default function CourseDetailPage() {
 
                         {activeTab === 'reviews' && (
                             <div>
-                                <h2 className="text-2xl font-bold mb-6">Student reviews</h2>
+                                <h2 className="text-2xl font-bold mb-6 text-black">Student reviews</h2>
                                 <div className="space-y-6">
                                     <div className="bg-white p-6 rounded-lg border">
                                         <div className="flex items-center gap-4 mb-4">
@@ -425,7 +425,7 @@ export default function CourseDetailPage() {
                                 <CardHeader>
                                     <h3 className="text-lg font-semibold">Related Courses</h3>
                                 </CardHeader>
-                                <CardContent className="space-y-4">
+                                <CardContent className="space-y-4 text-black">
                                     {[1, 2, 3].map((_, index) => (
                                         <div key={index} className="flex gap-3">
                                             <Image

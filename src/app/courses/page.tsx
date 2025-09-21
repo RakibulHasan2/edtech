@@ -178,7 +178,7 @@ export default function CoursesPage() {
                                     <select
                                         value={selectedLevel}
                                         onChange={(e) => setSelectedLevel(e.target.value)}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2  text-black focus:ring-blue-500"
                                     >
                                         <option value="">All Levels</option>
                                         <option value="beginner">Beginner</option>
@@ -195,7 +195,7 @@ export default function CoursesPage() {
                                     <select
                                         value={priceRange}
                                         onChange={(e) => setPriceRange(e.target.value)}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2  text-black focus:ring-blue-500"
                                     >
                                         <option value="">All Prices</option>
                                         <option value="free">Free</option>
